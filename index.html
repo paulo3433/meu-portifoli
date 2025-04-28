@@ -4,29 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
 
 <body>
     <header class="container text-center">
-        <img src="img/a638373644ed549c23c4998ddbfbe79e.jpg" class="rounded-circle" width="150" height="150"alt="Avatar do Paulo" srcset="">
-        <p class="lead">Olá, me chamo Paulo!</p>
-        <h1>Estudo no Colégio 14 de Dezembro</h1>
-        <p>Curso o 2° ano do Ensino Médio Integral, na área de Exatas. Futuramente quero ser jogador.</p>
-        <p>Minhas habilidades</p>
-        <div>
-            <p class="badge text-bg-secondary">jogar bola</p>
-            <p class="badge text-bg-secondary">torce pro corinthians</p>
-            <p class="badge text-bg-secondary">Comunicação</p>
-        </div>
+        <img src="img/a638373644ed549c23c4998ddbfbe79e.jpg" alt="Avatar do Paulo" class="rounded-circle" width="150" height="150"
+            srcset="">
+            <h1>Estudo no Colégio 14 de Dezembro</h1>
+            <p>Curso o 2° ano do Ensino Médio Integral, na área de Exatas. Futuramente quero ser jogador.</p>
+            <p>Minhas habilidades</p>
+            <div>
+                <p class="badge text-bg-secondary">jogar bola</p>
+                <p class="badge text-bg-secondary">torce pro corinthians</p>
+                <p class="badge text-bg-secondary">Comunicação</p>
+            </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
             crossorigin="anonymous"></script>
     </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/noticiasconcursos.com.br-enem-como-escrever-uma-boa-redacao-mais-rapido-redacao-do-enem.webp" class="card-img-top"
+                        alt="Imagem do projeto redação">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Redação</h5>
+                        <p class="card-text" style="text-align: justify;">Projeto desenvolvido com a a prof. Silvana. O objetivo era desenvolver a escrita e ampliar o vocabulário.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o
+                            projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/o-que-é-vôlei-de-praia.jpg" class="card-img-top"
+                        alt="Imagem do projeto volei">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Vôlei na Escola</h5>
+                        <p class="card-text" style="text-align: justify;">Projeto desenvolvido com a prof. Patrícia. Tinha pór objetivo desenvolver o trabalho colaborativo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o
+                            projeto</button>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ChatGPT Image 23 de abr. de 2025, 14_06_06.png" class="card-img-top"
+                        alt="Imagem do projeto de Robótica">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Robótica</h5>
+                        <p class="card-text" style="text-align: justify;">Projeto desenvolvido com os alunos das duas
+                            últimas séries do Ensino Médio.
+                            Tem como objetivo a educação integral do aluno;
+                            desenvolver seu raciocínio lógico, a capacidade de resolução de problemas e o trabalho
+                            colaborativo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o
+                            projeto</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Redação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">Projeto desenvolvido com a a prof. Silvana. O objetivo era desenvolver a escrita e ampliar o vocabulário.</p>
+                    <img src="img/noticiasconcursos.com.br-enem-como-escrever-uma-boa-redacao-mais-rapido-redacao-do-enem.webp" alt="Imagem do projeto redação"
+                        class="img-fluid w-100" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Vôlei na Escola</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">rojeto desenvolvido com a prof. Patrícia. Tinha pór objetivo desenvolver o trabalho colaborativo.</p>
+                    <img src="img/o-que-é-vôlei-de-praia.jpg" class="img-fluid w-100"
+                        alt="Imagem do projeto volei" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto Robótica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">O Projeto Robótica na Escola tem como objetivo introduzir os alunos do
+                        Ensino Médio ao universo
+                        da robótica, promovendo o desenvolvimento de competências nas áreas de tecnologia, programação,
+                        matemática e resolução de problemas. Por meio de aulas práticas e interativas, os estudantes têm
+                        a oportunidade de montar e programar robôs utilizando kits educativos, sensores e plataformas de
+                        programação em blocos ou linguagens mais avançadas, conforme o nível da turma. O projeto visa
+                        aproximar os alunos das inovações tecnológicas e estimular o pensamento lógico, criativo e
+                        analítico.</p>
+                    <p class="text-justify">Além de construir e programar robôs, os alunos participam de desafios e
+                        missões que envolvem
+                        situações reais, incentivando o trabalho em equipe, a comunicação e a autonomia. O projeto
+                        também contribui para despertar o interesse pelas carreiras nas áreas de Ciência, Tecnologia,
+                        Engenharia e Matemática, preparando os jovens para os desafios do mundo digital e da
+                        indústria 4.0. Com essa abordagem prática e motivadora, o Projeto Robótica na Escola transforma
+                        a aprendizagem em uma experiência dinâmica, envolvente e alinhada com as demandas do século XXI.
+                    </p>
+                    <img src="img/ChatGPT Image 23 de abr. de 2025, 14_06_06.png" class="img-fluid w-100"
+                        alt="Imagem do projeto Clube de Ciências" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato!</h2>
+        <i class="bi bi-envelope-at"></i>
+        <p>E-mail: paulo@gmail.com</p>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Paulo.</p>
+    </footer>
 </body>
 
 </html>
